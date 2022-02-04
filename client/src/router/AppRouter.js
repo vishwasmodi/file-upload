@@ -13,10 +13,9 @@ const AppRouter = () => (
     <div className="container">
       <Header />
       <div className="main-content">
-        <App />
-
         <Switch>
-          <Route component={<FilesList />} path="/list" />
+          <Route element={<App />} path="/" exact={true} />
+          <Route element={<FilesList />} path="/list" />
         </Switch>
       </div>
     </div>
